@@ -121,22 +121,23 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'paypal.standard.ipn',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
+    # Django admin
     'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    # Paypal
+    'paypal.standard.ipn',
+    # Vendor
     'gunicorn',
     'compressor',
-    'home',
-    'cart',
+    # Apps
     'shop',
+    'order',
 )
 
 # A sample logging configuration. The only tangible logging
